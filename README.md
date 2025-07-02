@@ -36,9 +36,9 @@ The application is architected with a modern, decoupled structure, separating th
 
 ```mermaid
 graph TD
-    A[User's Browser] -->|"Interacts with UI"| B(React Frontend on Vercel);
-    B -->|"POST Request (Axios)"| C{Flask API on Hugging Face Spaces};
-    C -->|"Loads Model & Generates Text"| D(Fine-tuned TinyLlama Model);
+    A["User's<br>Browser"] -->|"Interacts with UI"| B("React Frontend<br>on Vercel");
+    B -->|"POST Request (Axios)"| C{"Flask API<br>on Hugging Face Spaces"};
+    C -->|"Loads Model &<br>Generates Text"| D("Fine-tuned<br>TinyLlama Model");
     D -->|"Returns Report Text"| C;
     C -->|"JSON Response"| B;
     B -->|"Displays Report"| A;

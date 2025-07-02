@@ -177,13 +177,13 @@ button:disabled {
 .limitation-note {
   font-size: 0.9rem;
   font-style: italic;
-  color: #9ca3af; /* A slightly softer gray */
-  background-color: rgba(75, 85, 99, 0.1); /* Subtle background highlight */
+  color: #9ca3af;
+  background-color: rgba(75, 85, 99, 0.1);
   padding: 12px;
   border-radius: 6px;
   border-left: 3px solid var(--border-color);
 }
 
 .limitation-note strong {
-  font-style: normal; /* Keep the 'Acknowledge Limitations:' part non-italic */
+  font-style: normal;
 }

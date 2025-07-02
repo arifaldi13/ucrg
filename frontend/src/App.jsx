@@ -114,7 +114,7 @@ function App() {
 		  </p>
 		</div>
 		
-		<a href="https://github.com/arifaldi13" target="_blank" rel="noopener noreferrer" className="github-button">
+		<a href="https://github.com/arifaldi13/ucrg" target="_blank" rel="noopener noreferrer" className="github-button">
           <GithubIcon />
           <span>View on GitHub</span>
         </a>
