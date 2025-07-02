@@ -4,11 +4,9 @@
 
 A full-stack AI application that leverages a fine-tuned Large Language Model (LLM) to generate natural-language compliance reports from structured JSON data.
 
----
 
-### ▶️ **[View the Live Demo Here](https://rifukawa-ucrg.vercel.app/)** ◀️
+▶️ **[View the Live Demo Here](https://rifukawa-ucrg.vercel.app/)** ◀️
 
----
 
 ![UCRG Demo GIF](./demo.gif)
 
