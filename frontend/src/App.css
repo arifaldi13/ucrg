@@ -1,0 +1,189 @@
+/* frontend/src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  --bg-color: #111827;
+  --card-color: #1f2937;
+  --text-color: #e5e7eb;
+  --primary-color: #3b82f6;
+  --border-color: #374151;
+  --error-color: #ef4444;
+  --success-color: #22c55e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: white;
+}
+
+p {
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #374151;
+  cursor: not-allowed;
+}
+
+.result-box {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.result-box h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.error-box {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: var(--error-color);
+  color: #fca5a5;
+}
+
+.success-box {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-color: var(--success-color);
+  color: var(--text-color);
+}
+
+.success-box p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.about-section {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-column h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.about-column p, .about-column ul {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.about-column ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.about-column li {
+  margin-bottom: 8px;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, border-color 0.2s;
+  align-self: flex-start;
+}
+
+.github-button:hover {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #AFAFFB;
+}
+
+.limitation-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #9ca3af; /* A slightly softer gray */
+  background-color: rgba(75, 85, 99, 0.1); /* Subtle background highlight */
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid var(--border-color);
+}
+
+.limitation-note strong {
+  font-style: normal; /* Keep the 'Acknowledge Limitations:' part non-italic */
+}
